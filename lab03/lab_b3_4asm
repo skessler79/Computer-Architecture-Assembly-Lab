@@ -1,0 +1,6 @@
+		MOV 		R0, #0xFF
+		MOV		R1, #0x01
+		AND		R2, R0, R1
+		MOV		R3, #0x7500
+		STR		R2, [R3]
+		END

@@ -1,0 +1,17 @@
+		MOV			R0, #0x32
+		MOV			R1, #0x25
+		MOV			R2, #0x35
+		MOV			R3, #0x22
+		MOV			R4, #0xFFFFFFFF
+		EOR			R5, R0, R4
+		EOR			R6, R1, R4
+		EOR			R7, R2, R4
+		EOR			R8, R3, R4
+		SUBS			R0, R5, #0x1
+		SUBS			R2, R7, #0x1
+
+		MOV			R9, #0x2000
+		STR			R0, [R9]
+		STR			R6, [R9, #0x4]
+		STR			R2, [R9, #0x8]
+		STR			R8, [R9, #0xC]

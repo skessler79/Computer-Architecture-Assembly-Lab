@@ -1,0 +1,21 @@
+		MOV		R5, #0x40
+		MOV		R6, #0x1000
+		ADDS		R6, R6, #0x20
+		STR		R5, [R6]
+		MOV		R5, #0x50
+		MOV		R6, #0x2000
+		ADDS		R6, R6, #0x30
+		STR		R5, [R6]
+
+		MOV		R0, #0x20
+		MOV		R1, #0x30
+		MOV		R2, #0x1000
+		MOV		R3, #0x20
+		MOV		R4, #0x2000
+
+		;MOV		R0, #0x20
+		;ADD 	R0, R1, R3
+		;MOV		R0, R2
+		;LDR 	R0, [R2, #0x20]
+		;STR 	R1, [R2]
+		LDR 		R0, [R4, R1]	
